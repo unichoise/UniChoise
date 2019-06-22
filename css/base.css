@@ -13,3 +13,9 @@
     display: flex;
     font-family: merriweather-regular;
 }
+
+.round-container {
+    border-radius: 20px;
+    background-color: #fbe2cb;
+}
+

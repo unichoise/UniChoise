@@ -1,0 +1,26 @@
+.back-bar {
+    padding-top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.back {
+    width: 20%;
+}
+
+@media (max-width: 990px) {
+    .back {
+        width: 90%;
+    }
+}
+
+.main {
+    height: 60vh;
+}
+
+.left-sidebar {
+    height: 30vh;
+    border-radius: 20px;
+    background-color: #feeddf;
+}
