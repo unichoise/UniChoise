@@ -1,0 +1,15 @@
+@font-face {
+    font-family: merriweather-regular;
+    src: url("/font/Merriweather-Regular.ttf");
+}
+
+.bg-nav {
+    background-color: #fa9639;
+}
+
+.header {
+    margin-left: 15px;
+    align-items: center;
+    display: flex;
+    font-family: merriweather-regular;
+}
