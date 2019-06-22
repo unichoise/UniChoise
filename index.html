@@ -10,11 +10,16 @@
     <link rel="stylesheet" href="css/bootstrap-grid.css.map">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/chat.css">
+
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 <div class="navbar bg-nav">
-    <div class="navbar-brand">
+    <div class="navbar-brand" style="display: flex; flex-flow: row">
         <img src="img/logo.png" class="img-responsive img-rounded" width="70" height="70">
+        <h2 class="header">UniChoice</h2>
     </div>
 </div>
 <div class="navbar search-bar">
@@ -22,14 +27,49 @@
     <input placeholder="text" class="search">
 </div>
 <div class="container-fluid row">
-    <div class="section col-lg-8">
-        <img src="img/house.jpg">
-        <div class="block container-fluid round-container">
-            <div class="description">
+    <div class="col-lg-8">
+        <div class="section">
+            <img src="img/house.jpg">
+            <div class="block container-fluid round-container">
+                <div class="description">
 
+                </div>
+                <div class="note">
+
+                </div>
             </div>
-            <div class="note">
+        </div>
+        <div class="section">
+            <img src="img/house.jpg">
+            <div class="block container-fluid round-container">
+                <div class="description">
 
+                </div>
+                <div class="note">
+
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <img src="img/house.jpg">
+            <div class="block container-fluid round-container">
+                <div class="description">
+
+                </div>
+                <div class="note">
+
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <img src="img/house.jpg">
+            <div class="block container-fluid round-container">
+                <div class="description">
+
+                </div>
+                <div class="note">
+
+                </div>
             </div>
         </div>
     </div>
@@ -56,8 +96,17 @@
         </div>
     </div>
 </div>
-<div class="dialog-btn">
-
+<img class="dialog-btn" src="img/dialog.png" onclick="openChat()">
+<div class="dialog" id="chat" style="opacity: 0; z-index: -100">
+    <div class="close dialog-close" style="height: 20px" onclick="closeChat()">
+        <span aria-hidden="true">&times;</span>
+    </div>
+    <div class="dialog-content chat" id="chat-content"></div>
+    <div class="dialog-input container">
+        <input placeholder="Message" class="col-lg-9" id="chat-input">
+        <button class="col-lg-3" onclick="sendChatMessage()">Send</button>
+    </div>
 </div>
+<script src="js/main.js"></script>
 </body>
 </html>
