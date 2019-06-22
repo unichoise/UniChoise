@@ -50,6 +50,11 @@
     margin-right: 20px;
 }
 
+.section-container {
+    height: 100%;
+    overflow-x: auto;
+}
+
 .section .block {
     display: flex;
     flex-flow: row;
@@ -58,11 +63,11 @@
 }
 
 .section .block .description {
-    width: 75%;
+    width: 94%;
 }
 
 .section .block .note {
-    width: 25%;
+    width: 6%;
 }
 
 .round-container {
@@ -94,23 +99,37 @@
     height: 5%;
     margin: 5px 1px;
     min-height: 25px;
-    background-color: #fff;
 }
 
 .block-ege .ege-items {
     display: flex;
+    flex-flow: column;
     flex: 1;
 }
 
 .block-ege .ege-item .description {
+    background-color: #fff;
     width: 75%;
-    border-right: 5px solid #fbbc82;
+    border: 1px solid #fbbc82;
+    border-radius: 20px;
     padding-left: 10px;
+    margin-right: 10px;
 }
 
 .block-ege .ege-item .note {
+    border: 1px solid #fbbc82;
+    border-radius: 20px;
+    background-color: #fff;
     width: 25%;
     padding-left: 10px;
+}
+
+.block-ege .ege-item .note input {
+    height: 100%;
+    background-color: transparent;
+    border: 0;
+    width: calc(100% - 10px);
+    margin: 1px 10px 1px 1px;
 }
 
 .block-ege .ege-btn {
@@ -143,7 +162,7 @@
 }
 
 .dialog-btn {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     left: 20px;
     width: 75px;
@@ -154,7 +173,7 @@
 }
 
 .dialog {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     left: 20px;
     height: 40vh;

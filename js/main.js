@@ -26,16 +26,17 @@ function insertYourMessage(message) {
 function sendChatMessage() {
     var msg = document.querySelector("#chat-input").value;
     insertYourMessage(msg);
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "/bot.php?text=" + msg);
-    xhr.onreadystatechange = function (ev) {
-        // noinspection EqualityComparisonWithCoercionJS
-        if(xhr.readyState == 4) {
-            if(xhr.status != 200) {
-                alert("ERROR " + xhr.status + " " + xhr.statusText);
-            } else {
-                insertBotMessage(xhr.responseText)
-            }
-        }
-    };
+    // var xhr = new XMLHttpRequest();
+    // xhr.open("GET", "/bot.php?text=" + msg);
+    // xhr.onreadystatechange = function (ev) {
+    //     // noinspection EqualityComparisonWithCoercionJS
+    //     if(xhr.readyState == 4) {
+    //         if(xhr.status != 200) {
+    //             alert("ERROR " + xhr.status + " " + xhr.statusText);
+    //         } else {
+    //             insertBotMessage(xhr.responseText)
+    //         }
+    //     }
+    // };
+    insertBotMessage("yay")
 }
