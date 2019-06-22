@@ -1,0 +1,135 @@
+.bg-nav {
+    background-color: #fa9639;
+}
+
+.search-bar {
+    padding-top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    width: 20%;
+}
+
+@media (max-width: 990px) {
+    .search {
+        width: 90%;
+    }
+}
+
+.section {
+    min-height: 100px;
+    display: flex;
+    flex-flow: row;
+    max-height: 150px;
+}
+
+.section img {
+    width: 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    max-height: 150px;
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.section .block {
+    display: flex;
+    flex-flow: row;
+    min-width: 75%;
+    min-height: 100%;
+}
+
+.section .block .description {
+    width: 75%;
+}
+
+.section .block .note {
+    width: 25%;
+}
+
+.round-container {
+    border-radius: 20px;
+    background-color: #fbe2cb;
+}
+
+.section .block * {
+    height: 100%;
+}
+
+.section .block *:not(:first-child) {
+    border-left: 5px solid #fbbc82;
+}
+
+.block-ege {
+    height: 50vh;
+    margin-bottom: 30px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+}
+
+.block-ege .ege-item {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    border-radius: 20px;
+    height: 5%;
+    margin: 5px 1px;
+    min-height: 25px;
+    background-color: #fff;
+}
+
+.block-ege .ege-items {
+    display: flex;
+    flex: 1;
+}
+
+.block-ege .ege-item .description {
+    width: 75%;
+    border-right: 5px solid #fbbc82;
+    padding-left: 10px;
+}
+
+.block-ege .ege-item .note {
+    width: 25%;
+    padding-left: 10px;
+}
+
+.block-ege .ege-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.block-forum {
+    height: 25vh;
+    padding: 10px;
+}
+
+.block-forum .forum-item {
+    min-height: 10vh;
+    border-radius: 20px;
+    height: 20%;
+    margin: 5px 1px;
+    background-color: #fff;
+}
+
+@media (max-width: 990px) {
+    .block-ege {
+        display: none;
+    }
+
+    .block-forum {
+        display: none;
+    }
+}
+
+.dialog-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
