@@ -40,3 +40,9 @@ function sendChatMessage() {
     // };
     insertBotMessage("yay")
 }
+
+for (var elementKey in document.querySelector(".section")) {
+    elementKey.onclick = function () {
+        window.location.href = "/desc.php?id=" + elementKey.dataset.id;
+    }
+}
