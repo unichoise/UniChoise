@@ -19,3 +19,11 @@
     background-color: #fbe2cb;
 }
 
+button {
+    background: rgba(255, 255, 255, .7);
+    border-color: transparent;
+}
+
+button:focus {
+    border-color: transparent;
+}
