@@ -38,6 +38,7 @@ function sendChatMessage() {
             }
         }
     };
+    xhr.send()
     // insertBotMessage("yay")
 }
 
