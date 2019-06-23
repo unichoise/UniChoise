@@ -43,7 +43,7 @@ function sendChatMessage() {
 
 document.querySelector("#search").addEventListener("keyup", function (evt) {
     if(evt.keyCode == 13) {
-        e.preventDefault();
+        evt.preventDefault();
         window.location.href = "/index.php?search=" + document.querySelector("#search").value;
     }
 });
