@@ -47,3 +47,9 @@ document.querySelector("#search").addEventListener("keyup", function (evt) {
         window.location.href = "/index.php?search=" + document.querySelector("#search").value;
     }
 });
+
+document.querySelectorAll(".section").forEach(function (value) {
+    value.addEventListener("click", function (evt) {
+        window.location.href = "/desc.php?id=" + value.dataset.id;
+    });
+});

@@ -33,14 +33,15 @@ body {
     border-radius: 20px;
     background-color: #feeddf;
     padding: 5px;
-    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .left-sidebar .item {
-    min-height: 150px;
+    min-height: 32%;
     display: flex;
     flex-flow: row;
     margin: 5px;
+    align-items: center;
 }
 
 .left-sidebar .item div {
@@ -53,12 +54,12 @@ body {
 }
 
 .left-sidebar .item img {
+    height: 100%;
     margin-left: 20px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     border-radius: 50%;
-    max-height: 150px;
-    max-width: 150px;
+    max-width: 96px;
 }
 
 .right-sidebar {
@@ -189,11 +190,31 @@ section {
     margin-right: 15px;
 }
 
-.iconed-item div {
+.iconed-item > div:not(.separator),
+.iconed-item > div.separator > div:not(.score) {
     border-radius: 20px;
     background-color: #fff;
     display: flex;
     flex: 1;
     justify-content: center;
     align-items: center;
+}
+
+.iconed-item > div.separator {
+    width: 100%;
+}
+
+.iconed-item > div.separator > div.score {
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row;
+    height: 50%;
+    padding-top: 20px;
+}
+
+.iconed-item > div.separator > div.score > div {
+    width: 25%;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-color: #fff;
 }
